@@ -31,7 +31,7 @@ RESOURCES = {
         "labels": {"primary": {"id": 'INTEGER', "project_id": 'INTEGER'}},
         "members": {"primary": {"id": 'INTEGER', "project_id": 'INTEGER'}},
         "deployments": {"primary": {"id": 'INTEGER', "project_id": 'INTEGER'}},
-        "variables": {"primary": {"id": 'INTEGER', "project_id": 'INTEGER'}},
+        "variables": {"primary": { "project_id": 'INTEGER'}},
         "protected_branches": {"primary": {"id": 'INTEGER', "project_id": 'INTEGER'}},
         "protected_tags": {"primary": {"id": 'INTEGER', "project_id": 'INTEGER'}},
         "boards": {"primary": {"id": 'INTEGER', "project_id": 'INTEGER'}},
@@ -40,7 +40,7 @@ RESOURCES = {
         "repository/branches": {"primary": {"name": 'VARCHAR(300)', "project_id": 'INTEGER'}},
     },
     "groups": {
-        "groups": {"primary": {"group_id": 'INTEGER'}},
+        "groups": {"primary": {"group_id": 'INTEGER','id': 'INTEGER'}},
         "subgroups": {"primary": {"id": 'INTEGER', "group_id": 'INTEGER'}},
         "wikis": {"primary": {"id": 'INTEGER', "group_id": 'INTEGER'}},
         "repository_files": {"primary": {"id": 'INTEGER', "group_id": 'INTEGER'}},
